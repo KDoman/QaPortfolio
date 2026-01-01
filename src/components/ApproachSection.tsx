@@ -4,6 +4,8 @@ import { Target, Wrench, Users, TrendingUp } from 'lucide-react';
 const ApproachSection = () => {
   const { t } = useLanguage();
 
+  const flow = ["approach.flow1","approach.flow2","approach.flow3","approach.flow4","approach.flow5"]
+
   const approaches = [
     {
       icon: Target,
@@ -26,6 +28,11 @@ const ApproachSection = () => {
       descKey: 'approach.point4.desc',
     },
   ];
+
+  const animationDelay = (index:number):string => {
+    return `${index * 0.3}s`;
+
+  } 
 
   return (
     <section id="approach" className="section-padding bg-background">
@@ -68,16 +75,18 @@ const ApproachSection = () => {
         {/* E2E Flow Diagram */}
         <div className="mt-16 max-w-4xl mx-auto">
           <h3 className="text-lg font-heading font-semibold text-center text-foreground mb-8">
-            E2E Testing Flow
+            {t("approach.flow.title")}
           </h3>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            {['Requirements', 'Test Design', 'Automation', 'Execution', 'Reporting'].map((step, index) => (
-              <div key={index} className="flex items-center gap-4">
-                <div className="px-6 py-3 bg-secondary rounded-lg border border-border text-sm font-medium text-foreground">
-                  {step}
+          <div className="sm:flex flex-wrap items-center justify-center ">
+            {flow.map((step, index) => (
+              <div key={index} className="flex flex-col sm:flex-row items-center gap-4 justify-center my-4">
+                <div className="px-6 py-3 bg-secondary rounded-lg border border-border text-sm font-medium text-foreground max-w-fit animate-flow" style={{animationDelay:animationDelay(index + 1)}}>
+                  {t(step)}
                 </div>
-                {index < 4 && (
-                  <div className="hidden sm:block w-8 h-[2px] bg-accent" />
+                {index < 4 && (<>
+                  <div className="hidden sm:block w-8 h-[2px] bg-accent mr-4 animate-flow" style={{animationDelay:animationDelay(index + 1.3 )}} />
+                  <div className={"block sm:hidden w-[2px] h-8 bg-accent animate-flow"} style={{animationDelay:animationDelay(index + 1.3 )}} />
+                </>
                 )}
               </div>
             ))}
