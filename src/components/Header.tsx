@@ -80,7 +80,7 @@ const Header = () => {
             </div>
 
             {/* Mobile Menu Button */}
-            <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="md:hidden p-2 text-foreground hover:bg-secondary rounded-lg transition-colors">
+            <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className={`md:hidden p-2 text-foreground hover:bg-secondary rounded-lg transition-colors ${!isScrolled ? " bg-primary-foreground/20" : "bg-primary/5"}`}>
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
@@ -88,13 +88,13 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-border animate-fade-in bg-primary">
+          <nav className={`md:hidden py-4 mb-6 border-t border-border animate-fade-in ${!isScrolled ? ' bg-primary' : "bg-foreground/20"}`}>
             <div className="flex flex-col gap-1">
               {navItems.map((item) => (
                 <button
                   key={item.key}
                   onClick={() => handleNavClick(item.href)}
-                  className="px-4 py-3 text-left text-sm font-medium text-primary-foreground hover:text-foreground hover:bg-secondary rounded-lg transition-colors"
+                  className={`px-4 py-3 text-left text-sm font-medium  hover:bg-secondary transition-colors hover:text-foreground ${!isScrolled ? "text-primary-foreground " : "text-secondary-foreground"}`}
                 >
                   {t(`nav.${item.key}`)}
                 </button>

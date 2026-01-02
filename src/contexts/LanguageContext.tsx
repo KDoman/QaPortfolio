@@ -20,8 +20,8 @@ const translations = {
     "nav.contact": "Contact",
 
     // Hero
-    "hero.status": "Open to opportunities",
-    "hero.title": "Automation QA Engineer",
+    "hero.status": "Open to collaboration",
+    "hero.title": "Manual QA & Aspiring Automation Engineer",
     "hero.subtitle": "Manual Testing Background | Playwright | Mobile & Web Testing",
     "hero.description": "Quality-focused QA Engineer with experience in mobile banking applications, transitioning into test automation and building E2E solutions.",
     "hero.github": "GitHub Projects",
@@ -31,16 +31,15 @@ const translations = {
     // About
     "about.title": "About Me",
     "about.p1": "I combine hands-on QA experience with a software development background, which allows me to design clear, stable, and easy-to-maintain automated tests.",
-    "about.p2":
-      "My professional journey started with solid foundations in programming (JavaScript, React) and later evolved into Full Stack development using the MERN stack. This background gives me a strong understanding of how applications work “under the hood” and which areas are most prone to defects.",
-    "about.p3":
-      "Currently, I work as a Mobile Application Tester in the banking sector, gaining experience in a regulated enterprise environment where quality and reliability are critical. In parallel, I am actively transitioning toward test automation, using Playwright to build scalable end-to-end tests.",
+    "about.p2": "My career started with solid programming foundations (JavaScript, React) and later developed into Full Stack Development in the MERN stack. This gives me a deep understanding of how applications work internally and which areas are most prone to errors.",
+    "about.p3": "Currently, I work as a manual mobile application tester in the banking sector, gaining experience in a regulated, high-quality environment. At the same time, I am developing my skills in E2E test automation using Playwright and plan to extend mobile test automation for iOS and Android using Appium, aiming to combine manual and automated QA knowledge in my daily work.",
     "about.highlight1.title": "Developer Background",
     "about.highlight1.desc": "Practical experience with the MERN stack and application architecture",
     "about.highlight2.title": "Banking Environment",
     "about.highlight2.desc": "Experience working with systems that have high quality and compliance requirements",
-    "about.highlight3.title": "Automation Focus",
-    "about.highlight3.desc": "Designing and developing E2E tests using Playwright",
+    "about.highlight3.title": "Test Automation",
+    "about.highlight3.desc": "Designing and developing E2E tests with Playwright and automated mobile tests with Appium",
+
 
     // Experience
     "experience.title": "Professional Experience",
@@ -102,6 +101,7 @@ const translations = {
     "projects.project1.feature2": "Business-readable test scenarios",
     "projects.project1.feature4": "Separation of pages, components, test data, and assertions",
     "projects.project1.feature1": "Fixture-based architecture",
+    "projects.more":"More coming soon",
 
     // Approach
     "approach.title": "Testing Approach",
@@ -183,7 +183,7 @@ const translations = {
 
     // Hero
     "hero.status": "Otwarty na współpracę",
-    "hero.title": "Inżynier QA ds. Automatyzacji",
+    "hero.title": "Tester Manualny & Aspirujący Automatyk",
     "hero.subtitle": "Doświadczenie w Testowaniu Manualnym | Playwright | Aplikacje mobilne i webowe",
     "hero.description": "Inżynier QA zorientowany na jakość z doświadczeniem w mobilnych aplikacjach bankowych, przechodzący do automatyzacji testów i budujący rozwiązania E2E.",
     "hero.github": "Projekty GitHub",
@@ -191,18 +191,18 @@ const translations = {
     "hero.cv": "Pobierz CV",
 
     // About
-    "about.title": "O Mnie",
-    "about.p1": "Łączę praktyczne doświadczenie QA z wiedzą programistyczną, co pozwala mi projektować czytelne, stabilne i łatwe w utrzymaniu testy automatyczne.",
-    "about.p2":
-      "Moja ścieżka zawodowa rozpoczęła się od solidnych podstaw w programowaniu (JavaScript, React), a następnie rozwinęła się w kierunku Full Stack Developmentu w stosie MERN. Dzięki temu dobrze rozumiem, jak działa aplikacja „od środka” oraz jakie obszary są najbardziej podatne na błędy.",
-    "about.p3":
-      "Obecnie pracuję jako Tester Aplikacji Mobilnych w sektorze bankowym, gdzie zdobywam doświadczenie w regulowanym środowisku enterprise, w którym jakość i niezawodność mają kluczowe znaczenie. Równolegle rozwijam się w kierunku automatyzacji testów, wykorzystując Playwright do budowy skalowalnych testów E2E.",
-    "about.highlight1.title": "Doświadczenie Developerskie",
-    "about.highlight1.desc": "Praktyczna znajomość MERN Stack i architektury aplikacji",
-    "about.highlight2.title": "Środowisko Bankowe",
-    "about.highlight2.desc": "Praca z systemami o wysokich wymaganiach jakościowych",
-    "about.highlight3.title": "Fokus na Automatyzację",
-    "about.highlight3.desc": "Projektowanie i rozwój testów E2E w Playwright",
+    
+  "about.title": "O Mnie",
+  "about.p1": "Łączę praktyczne doświadczenie QA z wiedzą programistyczną, co pozwala mi projektować czytelne, stabilne i łatwe w utrzymaniu testy automatyczne.",
+  "about.p2": "Moja ścieżka zawodowa rozpoczęła się od solidnych podstaw w programowaniu (JavaScript, React), a następnie rozwinęła się w kierunku Full Stack Developmentu w stosie MERN. Dzięki temu dobrze rozumiem, jak działa aplikacja „od środka” i które obszary są najbardziej podatne na błędy.",
+  "about.p3": "Obecnie pracuję jako tester manualny aplikacji mobilnych w sektorze bankowym, zdobywając doświadczenie w regulowanym środowisku o wysokich wymaganiach jakościowych. Równolegle rozwijam swoje umiejętności w zakresie automatyzacji testów E2E w Playwright oraz planuję poszerzyć automatyzację testów mobilnych na platformy iOS i Android z użyciem Appium, dążąc do połączenia wiedzy manualnej i automatycznej w codziennej pracy QA.",
+  "about.highlight1.title": "Doświadczenie Developerskie",
+  "about.highlight1.desc": "Praktyczna znajomość MERN Stack i architektury aplikacji",
+  "about.highlight2.title": "Testowanie Manualne",
+  "about.highlight2.desc": "Testowanie aplikacji mobilnych w środowisku enterprise",
+  "about.highlight3.title": "Automatyzacja Testów",
+  "about.highlight3.desc": "Projektowanie i rozwój testów E2E w Playwright oraz automatycznych testów mobilnych w Appium",
+
 
     // Experience
     "experience.title": "Doświadczenie Zawodowe",
@@ -264,6 +264,7 @@ const translations = {
     "projects.project1.feature2": "Testy czytelne biznesowo",
     "projects.project1.feature4": "Separacja stron, komponentów, danych testowych i asercji",
     "projects.project1.feature1": "Architektura oparta o fixtures",
+    "projects.more":"Więcej wkrótce",
 
     // Approach
     "approach.title": "Podejście do Testowania",

@@ -2,6 +2,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Github, ExternalLink, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { AnimatedDots } from "./ui/AnimatedDots";
 
 const ProjectsSection = () => {
   const { t } = useLanguage();
@@ -172,6 +173,12 @@ export class LoginPage {
                 </pre>
               </div>
             </div>
+          </div>
+          <div className="text-center mt-20">
+            <span className="inline-block bg-accent/20 text-accent font-semibold px-4 py-2 rounded-full shadow-md min-w-fit">
+              {t("projects.more")}
+              <AnimatedDots/>
+            </span>
           </div>
         </div>
       </div>

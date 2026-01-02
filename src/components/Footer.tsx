@@ -20,7 +20,6 @@ const Footer = () => {
             © {currentYear} {t("footer.rights")}
           </div>
 
-          <div className="text-sm text-primary-foreground/50">{t("footer.built")}</div>
         </div>
       </div>
     </footer>

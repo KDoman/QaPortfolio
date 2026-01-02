@@ -1,5 +1,5 @@
 import { useLanguage } from "@/contexts/LanguageContext";
-import { ClipboardList, Search, PenTool, PlayCircle, Bug, Smartphone, Accessibility, Wrench } from "lucide-react";
+import { ClipboardList, Search, PenTool, PlayCircle, Bug, Smartphone, Accessibility, Wrench, Landmark, ChartBar   } from "lucide-react";
 
 const MyWorkSection = () => {
   const { t } = useLanguage();
@@ -49,12 +49,12 @@ const MyWorkSection = () => {
       descKey: "mywork.tools.stack.desc",
     },
     {
-      icon: Wrench,
+      icon: Landmark ,
       titleKey: "mywork.tools.enterprise.title",
       descKey: "mywork.tools.enterprise.desc",
     },
     {
-      icon: Wrench,
+      icon: ChartBar ,
       titleKey: "mywork.tools.monitoring.title",
       descKey: "mywork.tools.monitoring.desc",
     },
@@ -86,8 +86,8 @@ const MyWorkSection = () => {
             ))}
           </div>
 
-          <div className="lg:hidden border border-accent"></div>
-          <div className="lg:block hidden border border-accent h-full"></div>
+          <div className="lg:hidden border-2 border-accent"></div>
+          <div className="lg:block hidden border-2 border-accent h-full"></div>
 
           {/* Tools */}
           <div className="space-y-6">
