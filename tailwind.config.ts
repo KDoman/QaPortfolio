@@ -84,7 +84,7 @@ export default {
           "0%": { opacity: "0.7", scale: "1" },
           "100%": { opacity: "0", scale: "1.6" },
         },
-        "flow": {
+        flow: {
           "0%": { opacity: "1" },
           "10%": { opacity: "0.2" },
           "20%": { opacity: "1" },
@@ -96,7 +96,7 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         "pulse-subtle": "pulse-subtle 2s ease-in-out infinite",
         "pulse-subtle-badge": "pulse-subtle-badge 3s ease-in-out infinite ",
-        "flow": "flow 3s ease-in-out infinite",
+        flow: "flow 3s ease-in-out infinite",
       },
     },
   },

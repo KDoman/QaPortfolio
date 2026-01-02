@@ -9,6 +9,7 @@ import ProjectsSection from "@/components/ProjectsSection";
 import ApproachSection from "@/components/ApproachSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import MyWorkSection from "@/components/MyWorkSection";
 
 const PortfolioContent = () => {
   const { language } = useLanguage();
@@ -38,6 +39,7 @@ const PortfolioContent = () => {
           <SkillsSection />
           <ProjectsSection />
           <ApproachSection />
+          <MyWorkSection />
           <ContactSection />
         </main>
         <Footer />

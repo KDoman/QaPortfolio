@@ -30,6 +30,7 @@ const Header = () => {
     { key: "skills", href: "#skills" },
     { key: "projects", href: "#projects" },
     { key: "approach", href: "#approach" },
+    { key: "work", href: "#my-work" },
     { key: "contact", href: "#contact" },
   ];
 
@@ -42,9 +43,13 @@ const Header = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-md  shadow-sm" : "bg-transparent"}`}>
       <div className="section-container">
-        <div className="flex items-center justify-between h-16 sm:h-20">
+        <div className="flex items-center justify-between h-16 sm:h-24">
           {/* Logo */}
-          <a href="https://www.linkedin.com/in/kacper-domanskii/" target="_blank" className="font-heading font-bold text-xl text-foreground">
+          <a
+            href="https://www.linkedin.com/in/kacper-domanskii/"
+            target="_blank"
+            className="font-heading font-bold text-xl text-foreground md:absolute md:top-2 lg:-top-1 lg:left-0 md:left-10 lg:relative"
+          >
             <span className="text-accent mr-1">Kacper</span>
             <span className={`${!isScrolled ? "text-secondary/70" : "text-foreground/70 "}`}>Domański</span>
           </a>
@@ -83,13 +88,13 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-border animate-fade-in">
+          <nav className="md:hidden py-4 border-t border-border animate-fade-in bg-primary">
             <div className="flex flex-col gap-1">
               {navItems.map((item) => (
                 <button
                   key={item.key}
                   onClick={() => handleNavClick(item.href)}
-                  className="px-4 py-3 text-left text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary rounded-lg transition-colors"
+                  className="px-4 py-3 text-left text-sm font-medium text-primary-foreground hover:text-foreground hover:bg-secondary rounded-lg transition-colors"
                 >
                   {t(`nav.${item.key}`)}
                 </button>

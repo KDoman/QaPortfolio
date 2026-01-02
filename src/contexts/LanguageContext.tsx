@@ -16,6 +16,7 @@ const translations = {
     "nav.skills": "Skills",
     "nav.projects": "Projects",
     "nav.approach": "Approach",
+    "nav.work": "Work",
     "nav.contact": "Contact",
 
     // Hero
@@ -94,7 +95,8 @@ const translations = {
     "projects.title": "Automation Projects",
     "projects.view": "View on GitHub",
     "projects.project1.title": "E2E Automation Framework with Playwright",
-    "projects.project1.desc": "A scalable end-to-end test automation framework built with Playwright, based on Page Object Model and custom fixtures. Tests are written in a business-readable format, focusing on real user flows and long-term maintainability.",
+    "projects.project1.desc":
+      "A scalable end-to-end test automation framework built with Playwright, based on Page Object Model and custom fixtures. Tests are written in a business-readable format, focusing on real user flows and long-term maintainability.",
     "projects.project1.scope": "E2E / UI Testing",
     "projects.project1.feature3": "Page Object Model with encapsulated actions and assertions",
     "projects.project1.feature2": "Business-readable test scenarios",
@@ -112,12 +114,12 @@ const translations = {
     "approach.point3.desc": "Bridging the gap between development and quality assurance",
     "approach.point4.title": "Continuous Improvement",
     "approach.point4.desc": "Monitoring test results and improving automated tests based on quality metrics and project feedback",
-    "approach.flow.title":"My Testing Flow",
-    "approach.flow1":"Requirements Analysis",
-    "approach.flow2":"Process Understanding",
-    "approach.flow3":"Test Design",
-    "approach.flow4":"Test Execution",
-    "approach.flow5":"Defect Reporting & Feedback",
+    "approach.flow.title": "My Testing Flow",
+    "approach.flow1": "Requirements Analysis",
+    "approach.flow2": "Process Understanding",
+    "approach.flow3": "Test Design",
+    "approach.flow4": "Test Execution",
+    "approach.flow5": "Defect Reporting & Feedback",
 
     // Contact
     "contact.title": "Get In Touch",
@@ -134,6 +136,40 @@ const translations = {
     // Footer
     "footer.rights": "All rights reserved.",
     "footer.built": "Built with React & Playwright mindset",
+
+    // How do i work
+    "mywork.title": "How I Work on a Daily Basis",
+    "mywork.intro": "My daily work focuses on understanding requirements, estimating testing effort, and ensuring quality through structured testing and close collaboration.",
+
+    "mywork.step1.title": "Requirements Analysis & Estimation",
+    "mywork.step1.desc": "Analyzing requirements together with the team, understanding business goals, identifying risks, and estimating testing effort.",
+
+    "mywork.step2.title": "Process Understanding & Exploratory Testing",
+    "mywork.step2.desc": "Exploring the application to understand business workflows, system behavior, and potential risk areas.",
+
+    "mywork.step3.title": "Test Design",
+    "mywork.step3.desc": "Designing clear and structured test cases based on requirements and exploratory findings, using Jira Xray.",
+
+    "mywork.step4.title": "Test Execution",
+    "mywork.step4.desc": "Executing test cases on mobile applications (iOS / Android) and validating results against expected behavior.",
+
+    "mywork.step5.title": "Defect Reporting & Collaboration",
+    "mywork.step5.desc": "Reporting defects, analyzing issues, and collaborating closely with QA, Developers, Analysts, and Product Owners.",
+
+    "mywork.tools.mobile.title": "Mobile Testing Environment",
+    "mywork.tools.mobile.desc": "Testing mobile banking applications on iOS and Android platforms.",
+
+    "mywork.tools.accessibility.title": "Accessibility Testing",
+    "mywork.tools.accessibility.desc": "Using VoiceOver and TalkBack to validate accessibility and user experience.",
+
+    "mywork.tools.stack.title": "Tools & Technology Stack",
+    "mywork.tools.stack.desc": "Jira, Xray, Confluence, Kibana, SQL, Postman, Agile / Scrum.",
+
+    "mywork.tools.monitoring.title": "Logs Analysis & Debugging",
+    "mywork.tools.monitoring.desc": "Analyzing application logs in Kibana to diagnose issues and verify system behavior.",
+
+    "mywork.tools.enterprise.title": "Enterprise Environment",
+    "mywork.tools.enterprise.desc": "Working in a regulated banking environment with strong focus on quality, security, and compliance.",
   },
   pl: {
     // Navigation
@@ -142,6 +178,7 @@ const translations = {
     "nav.skills": "Umiejętności",
     "nav.projects": "Projekty",
     "nav.approach": "Podejście",
+    "nav.work": "Praca",
     "nav.contact": "Kontakt",
 
     // Hero
@@ -220,9 +257,10 @@ const translations = {
     "projects.title": "Projekty Automatyzacji",
     "projects.view": "Zobacz na GitHub",
     "projects.project1.title": "Framework automatyzacji E2E w Playwright",
-    "projects.project1.desc": "Skalowalny framework testów end-to-end oparty o Playwright, wykorzystujący Page Object Model oraz własne fixtures. Testy są pisane w biznesowo czytelnym formacie, z naciskiem na realne scenariusze użytkownika i łatwe utrzymanie.",
+    "projects.project1.desc":
+      "Skalowalny framework testów end-to-end oparty o Playwright, wykorzystujący Page Object Model oraz własne fixtures. Testy są pisane w biznesowo czytelnym formacie, z naciskiem na realne scenariusze użytkownika i łatwe utrzymanie.",
     "projects.project1.scope": "Testy E2E / UI",
-   "projects.project1.feature3": "Page Object Model z enkapsulacją akcji i asercji",
+    "projects.project1.feature3": "Page Object Model z enkapsulacją akcji i asercji",
     "projects.project1.feature2": "Testy czytelne biznesowo",
     "projects.project1.feature4": "Separacja stron, komponentów, danych testowych i asercji",
     "projects.project1.feature1": "Architektura oparta o fixtures",
@@ -238,12 +276,12 @@ const translations = {
     "approach.point3.desc": "Łączenie światów developmentu i quality assurance",
     "approach.point4.title": "Ciągłe Doskonalenie",
     "approach.point4.desc": "Monitorowanie wyników testów oraz doskonalenie automatyzacji na podstawie metryk jakości i feedbacku projektowego",
-    "approach.flow.title":"Moje Flow Testów",
-    "approach.flow1":"Analiza Wymagań",
-    "approach.flow2":"Zrozumienie Procesu Biznesowego",
-    "approach.flow3":"Projektowanie Testów",
-    "approach.flow4":"Wykonanie Testów",
-    "approach.flow5":"Raportowanie Defektów i Feedback",
+    "approach.flow.title": "Moje Flow Testów",
+    "approach.flow1": "Analiza Wymagań",
+    "approach.flow2": "Zrozumienie Procesu Biznesowego",
+    "approach.flow3": "Projektowanie Testów",
+    "approach.flow4": "Wykonanie Testów",
+    "approach.flow5": "Raportowanie Defektów i Feedback",
 
     // Contact
     "contact.title": "Kontakt",
@@ -260,6 +298,40 @@ const translations = {
     // Footer
     "footer.rights": "Wszelkie prawa zastrzeżone.",
     "footer.built": "Zbudowane z React i podejściem Playwright",
+
+    // How do i work
+    "mywork.title": "Jak Pracuję na Co Dzień",
+    "mywork.intro": "Moja codzienna praca skupia się na analizie wymagań, estymacji prac testowych oraz zapewnianiu jakości poprzez uporządkowane testowanie i ścisłą współpracę zespołową.",
+
+    "mywork.step1.title": "Analiza Wymagań i Estymacja",
+    "mywork.step1.desc": "Analiza wymagań wraz z zespołem, zrozumienie celów biznesowych, identyfikacja ryzyk oraz estymacja zakresu testów.",
+
+    "mywork.step2.title": "Zrozumienie Procesu i Testy Eksploracyjne",
+    "mywork.step2.desc": "Eksploracja aplikacji w celu poznania procesów biznesowych, zachowania systemu oraz potencjalnych obszarów ryzyka.",
+
+    "mywork.step3.title": "Projektowanie Testów",
+    "mywork.step3.desc": "Projektowanie czytelnych i uporządkowanych przypadków testowych w oparciu o wymagania i wyniki testów eksploracyjnych, z wykorzystaniem Jira Xray.",
+
+    "mywork.step4.title": "Wykonanie Testów",
+    "mywork.step4.desc": "Wykonywanie testów aplikacji mobilnych (iOS / Android) oraz weryfikacja wyników względem oczekiwanego zachowania.",
+
+    "mywork.step5.title": "Raportowanie Defektów i Współpraca",
+    "mywork.step5.desc": "Raportowanie defektów, analiza problemów oraz ścisła współpraca z zespołami QA, Developerskimi, Analitykami i Product Ownerami.",
+
+    "mywork.tools.mobile.title": "Środowisko Testów Mobilnych",
+    "mywork.tools.mobile.desc": "Testowanie bankowych aplikacji mobilnych na platformach iOS oraz Android.",
+
+    "mywork.tools.accessibility.title": "Testy Dostępności",
+    "mywork.tools.accessibility.desc": "Praca z narzędziami VoiceOver i TalkBack w celu weryfikacji dostępności i użyteczności aplikacji.",
+
+    "mywork.tools.stack.title": "Narzędzia i Stos Technologiczny",
+    "mywork.tools.stack.desc": "Jira, Xray, Confluence, Kibana, SQL, Postman, Agile / Scrum.",
+
+    "mywork.tools.enterprise.title": "Środowisko Enterprise",
+    "mywork.tools.enterprise.desc": "Praca w regulowanym środowisku bankowym z naciskiem na jakość, bezpieczeństwo i zgodność z wymaganiami.",
+
+    "mywork.tools.monitoring.title": "Analiza Logów i Debugowanie",
+    "mywork.tools.monitoring.desc": "Analiza logów aplikacyjnych w Kibanie w celu diagnozowania błędów i weryfikacji zachowania systemu.",
   },
 };
 

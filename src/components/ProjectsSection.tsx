@@ -4,9 +4,10 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
 const ProjectsSection = () => {
-  const { t } = useLanguage()
+  const { t } = useLanguage();
 
-const codeFiles = {"login.spec.ts": `import { test } from "../../setup/baseTest";
+  const codeFiles = {
+    "login.spec.ts": `import { test } from "../../setup/baseTest";
 import { loginPageData } from "../../utils/data";
 
 test("Test Case 2: Login User with correct email and password", async ({ navBar, loginPage }) => {
@@ -27,7 +28,8 @@ test("Test Case 4: Logout User", async ({ navBar, loginPage }) => {
   await navBar.expectedLoggedIn();
   await navBar.clickOnTab(" Logout");
   await navBar.expectedLoggedOut();
-});`,"login.page.ts": `import { Page, expect } from "@playwright/test";
+});`,
+    "login.page.ts": `import { Page, expect } from "@playwright/test";
 
 export class LoginPage {
   constructor(private page: Page) {}
@@ -58,7 +60,7 @@ export class LoginPage {
     await expect(this.page.getByRole("heading", { name: "Account Deleted!" })).toBeVisible();
   }
 }`,
-  "baseTest.ts": `export const test = base.extend<MyPages>({
+    "baseTest.ts": `export const test = base.extend<MyPages>({
   page: async ({ page }, use) => {
     await page.goto("https://automationexercise.com/");
     const consent = page.getByRole("button", { name: "Consent" });
@@ -106,12 +108,10 @@ export class LoginPage {
   paymentPage: async ({ page }, use) => {
     await use(new PaymentPage(page));
   },
-});`
-};
+});`,
+  };
 
-
-const [activeFile, setActiveFile] = useState<keyof typeof codeFiles>("login.spec.ts");
-
+  const [activeFile, setActiveFile] = useState<keyof typeof codeFiles>("login.spec.ts");
 
   const features = ["projects.project1.feature1", "projects.project1.feature2", "projects.project1.feature3", "projects.project1.feature4"];
 
@@ -152,18 +152,14 @@ const [activeFile, setActiveFile] = useState<keyof typeof codeFiles>("login.spec
 
               {/* Code Preview */}
               <div className="bg-primary p-6 sm:p-8 lg:border-l border-border overflow-y-scroll overflow-y-hidden">
-              {/* Tabs */}
+                {/* Tabs */}
                 <div className="md:flex items-center gap-2 mb-4 border-b border-primary-foreground/10 max-w-fit">
                   {Object.keys(codeFiles).map((file) => (
                     <button
                       key={file}
                       onClick={() => setActiveFile(file as keyof typeof codeFiles)}
                       className={`px-3 py-1.5 text-xs font-mono transition-colors
-                        ${
-                          activeFile === file
-                            ? "text-white border-b-2 border-accent"
-                            : "text-primary-foreground/50 hover:text-white"
-                        }`}
+                        ${activeFile === file ? "text-white border-b-2 border-accent" : "text-primary-foreground/50 hover:text-white"}`}
                     >
                       {file}
                     </button>
