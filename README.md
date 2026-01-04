@@ -1,5 +1,7 @@
 # 🧪 QA Portfolio – Kacper Domański
 
+https://kacper-domanski-qaportfolio.vercel.app/
+
 Welcome to my QA portfolio!  
 This repository showcases my approach to **software quality assurance**, combining **manual testing experience** with **test automation skills** and a strong **technical background**.
 
